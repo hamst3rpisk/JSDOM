@@ -1,23 +1,23 @@
 let table = [];
-for (var i = 0; i < 5; i++) {
+for (let i = 0; i < 5; i++) {
     table[i] = prompt("Podaj swoje zainteresowanie ");
 }
 
 
-var list = document.querySelector("#list");
-for (var a = 0; a < table.length; a++) {
-    var newList = document.createElement("LI");
-    var newText = document.createTextNode(table[a]);
+let list = document.querySelector("#list");
+for (let a = 0; a < table.length; a++) {
+    let newList = document.createElement("LI");
+    let newText = document.createTextNode(table[a]);
     newList.appendChild(newText);
     list.insertBefore(newList, list.childNodes[a + 1]);
 }
 
-var button = document.querySelector("#dodaj");
+const button = document.querySelector("#dodaj");
 button.addEventListener("click", click);
 
 function click() {
-    var input = document.querySelector("#in");
-    var output = document.querySelector("#out");
+    let input = document.querySelector("#in");
+    let output = document.querySelector("#out");
     output.innerHTML = input.value;
 
     console.log(input.value);
