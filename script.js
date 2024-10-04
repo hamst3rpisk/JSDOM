@@ -26,6 +26,6 @@ function click() {
 function changecolor() {
     $("h1").css("color", "blue");
 }
-$("h1").fadeOut(1000);
+$("h1").fadeOut(3000);
 $("h1").delay(5000);
 $("h1").fadeIn(0, changecolor);
