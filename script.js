@@ -19,7 +19,9 @@ function click() {
     let input = document.querySelector("#in");
     let output = document.querySelector("#out");
     output.innerHTML = input.value;
-
+    output.style.color="green";
+    output.style.fontWeight="bold";
+    
     console.log(input.value);
 }
 
